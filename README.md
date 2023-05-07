@@ -10,11 +10,11 @@
 
 Many wineries have difficulty regulating the temperature and humidity of their wines. The regulation and control of these conditions is essential for wine, because this drink can end up losing life, and depending on the variation of these conditions, end up exhaling undesirable smells.
 
-# Project description:
+# Project description
 
  Function: Detect the temperature and humidity of an environment for regulating the conditions under which the wines are, both for preserving and for transporting them!
 
-# 📁 Acesso ao projeto
+# 📁 Project access
 
 
 

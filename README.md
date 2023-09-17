@@ -72,7 +72,7 @@ Minimum Secondary Storage - **20GB HD and/or SSD** (Depends on application requi
 
 Here you will find a set of collections designed to be imported by the Postman tool. These collections will help you interact with the Orion Context Broker, IoT Agent MQTT and STH-Comet components, present in the FIWARE Descomplicado architecture.
 
-Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> here </a> to access the Postman collection.
+Click <a href="https://github.com/pedrogava/EDGE_COMPUTING/blob/main/FIWARE.postman_collection.json"> here </a> to access the Postman collection.
 
 
 # Iot Device

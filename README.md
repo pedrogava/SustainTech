@@ -21,13 +21,18 @@
 # 📁 Essential resources
 
 ## FIWARE
-+ ### Requisitos de Software
 
-Docker e Docker-Compose
+<p align="center">
+<img src="https://github.com/pedrogava/EDGE_COMPUTING/assets/126473513/e8bee338-fa0c-4ffb-9d9c-a11e9f50d06d"/>
+</p>
 
-Click <a href=https://docs.docker.com/engine/install/ubuntu/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose no Ubuntu Server LTS.
++ ## Software Requirements
 
-+ ### Instalação e Inicialização
+Docker and Docker-Compose
+
+Click <a href=https://docs.docker.com/engine/install/ubuntu/> here </a> to see instructions for installing Docker and Docker-Compose on Ubuntu Server LTS.
+
++ ## Installation and Startup
 
 git clone https://github.com/fabiocabrini/fiware
 
@@ -35,23 +40,23 @@ cd fiware
 
 docker compose up -d
 
-+ ### Desligar
++ ## Turn off
 
 docker compose down
 
-**Observação:** O FIWARE Descomplicado utiliza volumes, portanto, os seus dados não serão perdidos ao desligá-lo!
+**Note:** FIWARE Uncomplicated uses volumes, so your data will not be lost when you turn it off!
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
 
-+ ### Requisitos de Hardware 
++ ## Hardware Requirements 
 
-Núcleos de Processamento - **1vCPU**
+Processing Cores - **1vCPU**
 
-Memória RAM - **1GB** 
+RAM memory - **1GB** 
 
-Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação).
+Minimum Secondary Storage - **20GB HD and/or SSD** (Depends on application requirements).
 
-+ ### Liberação de Portas no Firewall
++ ## Freeing Ports on the Firewall
 
 1026/TCP  - **API Orion Context Broker**
 
@@ -63,8 +68,24 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 27017/TCP - **MongoDB**
 
-<!-- + <a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relationship between Entities -->
++ ## Collection do Postman (Material for experimentation)
 
+Here you will find a set of collections designed to be imported by the Postman tool. These collections will help you interact with the Orion Context Broker, IoT Agent MQTT and STH-Comet components, present in the FIWARE Descomplicado architecture.
+
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> here </a> to access the Postman collection.
+
+
+# Iot Device
+
+## Prototype:
+
+### Hardware Requirements:
+
+- ESP2866
+- WIFI conection
+<h4 align="center"> 
+    🚧 Prototype under construction 🚧
+</h4>
 
 # Authors:
 
@@ -77,5 +98,5 @@ Rm 551965 - Nicolas Boni
 Rm 551043 - Pedro Gava
 
 <h4 align="center"> 
-    🚧 Projeto em construção 🚧
+    🚧 Project under construction 🚧
 </h4>

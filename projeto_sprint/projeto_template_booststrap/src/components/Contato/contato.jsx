@@ -10,6 +10,7 @@ export default class Contato extends Component {
       <section className="container">
         <section className="split-page">
           <div className="box-1">
+            {/* ajustando titulo */}
           <h1>Hello, Friend!</h1>
 
           <h3>If you like us, want to improve or have any suggestions.</h3>

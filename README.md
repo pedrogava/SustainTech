@@ -89,7 +89,7 @@ Click <a href="https://github.com/pedrogava/EDGE_COMPUTING/blob/main/FIWARE.post
 
 # Authors:
 
-Rm 98501 - Kauê
+Rm 98501 - Kauê Pastori - Turma ESPV 
 
 Rm 551445 - Pedro Oliveira Valotto
 

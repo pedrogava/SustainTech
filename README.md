@@ -91,7 +91,7 @@ Click <a href="https://github.com/pedrogava/EDGE_COMPUTING/blob/main/FIWARE.post
 
 Rm 98501 - Kauê
 
-Rm 551445 - Pedro Valotto
+Rm 551445 - Pedro Oliveira Valotto
 
 Rm 551965 - Nicolas Boni
 

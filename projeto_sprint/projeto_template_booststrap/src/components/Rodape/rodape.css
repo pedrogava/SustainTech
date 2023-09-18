@@ -1,0 +1,31 @@
+/* Estilização do footer */
+
+footer {
+  background-color: #333; 
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos igualmente ao longo da largura */
+  align-items: center; 
+  padding: 15px;
+}
+
+footer div {
+  flex: 1; 
+}
+
+ul {
+  gap: 48px; /* Aumentei o espaçamento entre os ícones para 20px */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Centraliza os ícones verticalmente */
+}
+
+.icons-img {
+  width: 12em;
+}
+
+.icons-img2 {
+  width: 3em;
+}

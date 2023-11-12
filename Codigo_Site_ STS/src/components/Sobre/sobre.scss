@@ -1,0 +1,167 @@
+// Definição de variáveis
+$font-stack: Arial, sans-serif;
+$primary-background-color: #f8f9fa;
+$primary-color: white;
+$secondary-color: black;
+$box-background-color: #2A5C57;
+$highlight-background-color: #4BA198;
+$small-font-size: 12px;
+$medium-font-size: 24px;
+$large-font-size: 46px;
+$extra-large-font-size: 42px;
+$mobile-breakpoint: 768px;
+
+// Estilos globais
+body {
+  font-family: $font-stack;
+  background-color: $primary-background-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Título
+.tittle {
+  color: $primary-color;
+  display: flex;
+  justify-content: left;
+  gap: 0.5%;
+  margin: 1%;
+}
+
+// Seção principal
+.main {
+  margin: 5%;
+  max-height: 100%;
+}
+
+// Caixa principal
+.box-main {
+  gap: 2%;
+  display: flex;
+  justify-content: center;
+  &-prim {
+    margin: 1%;
+  }
+  &-sec {
+    text-align: left;
+    margin: 3%;
+    padding-top: 6%;
+  }
+  p {
+    font-size: $large-font-size;
+    color: $primary-color;
+  }
+  p2 {
+    font-size: $medium-font-size;
+    color: $primary-color;
+  }
+}
+
+// Caixa do semáforo
+.box-semaforo {
+  border-radius: 24px 24px 0px 0px;
+  background-color: $primary-color;
+  margin: 0%;
+  &2 {
+    display: flex;
+    h1 {
+      color: $secondary-color;
+      font-size: $small-font-size;
+    }
+  }
+  &3 {
+    width: 40%;
+  }
+}
+
+.traffic-light {
+  width: 1.5em;
+}
+
+.semaforo-img {
+  width: 36em;
+}
+
+.box-main2 {
+  padding: 1%;
+  display: flex;
+  background-color: $box-background-color;
+  gap: 25%;
+  h1 {
+    font-size: $extra-large-font-size;
+  }
+  &-prim {
+    border-radius: 30px 0px 30px 0px;
+    background-color: $highlight-background-color;
+  }
+  &-sec {
+    padding: 2%;
+    background-color: $box-background-color;
+  }
+}
+
+
+.dropdown-toggle {
+  cursor: pointer;
+  color: $secondary-color;
+  background-color: transparent;
+  border: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.dropdown-menu {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  .dropdown-item {
+    color: $secondary-color;
+    
+    &:hover {
+      background-color: $highlight-background-color;
+    }
+  }
+}
+
+// Media queries para responsividade
+@media (max-width: $mobile-breakpoint) {
+  .tittle {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .main {
+    margin: 10px;
+  }
+
+  .box-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &-sec {
+      text-align: center;
+    }
+  }
+
+  .box-semaforo {
+    border-radius: 0;
+  }
+
+  .box-main2 {
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  .box-main2-prim, .box-main2-sec {
+    padding: 2%;
+    border-radius: 30px 0px 30px 0px;
+  }
+}

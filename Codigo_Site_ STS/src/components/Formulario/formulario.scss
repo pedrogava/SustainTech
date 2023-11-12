@@ -1,0 +1,164 @@
+// Definindo variáveis
+$font-main: Arial, sans-serif;
+$background-body: #f8f9fa;
+$container-max-width: 800px;
+$primary-color: #4BA19D;
+$primary-hover-color: #378A84;
+$danger-color: #DC3545;
+$danger-hover-color: #A52A2A;
+$shadow-light: rgba(0, 0, 0, 0.4);
+$shadow-strong: rgba(0, 0, 0, 0.8);
+$shadow-box: -10px 0px 20px rgba(0, 0, 0, 0.4);
+$form-padding: 30px;
+$form-width: 400px;
+$logo-width: 110px;
+$breakpoint-smartphone: 768px;
+
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+body {
+  font-family: $font-main;
+  background-color: $background-body;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.split-page {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  animation: slideInDown 1.5s ease-out forwards;
+}
+
+
+.left-half {
+  flex: 1;
+  background-image: url('../img/img-area-de-login.png');
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.right-half {
+  flex: 1;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: $shadow-box;
+}
+
+.split-divider {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: $shadow-light;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  box-shadow: 20px 0px 40px $shadow-strong;
+}
+
+.form-container {
+  width: $form-width;
+  padding: $form-padding;
+  border-radius: 10px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  background-color: transparent;
+  border-radius: 0;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 15px 30px !important;
+  font-size: 18px !important;
+  transition: background-color 0.3s ease !important;
+  box-shadow: 5px 0px 10px $shadow-strong;
+
+  &:hover {
+    background-color: $primary-hover-color !important;
+  }
+}
+
+.link-danger {
+  color: $danger-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $danger-hover-color;
+  }
+}
+
+.img-logo {
+  max-width: $logo-width;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: $breakpoint-smartphone) {
+  .split-page{
+    display: block;
+    padding-top: 6em;
+  
+  }
+
+}

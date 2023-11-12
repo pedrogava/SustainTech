@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+.tittle {
+  color: white;
+  display: flex;
+  justify-content: left;
+  gap: 0.5%;
+  margin: 1%;
+}
+.tittle .img-title {
+  width: 6em;
+}
+
+/* Seção principal */
+.main {
+  margin: 5%;
+  max-height: 100%;
+}
+
+/* Caixa principal */
+.box-main {
+  gap: 2%;
+  display: flex;
+  justify-content: center;
+}
+.box-main p {
+  font-size: 46px;
+  color: white;
+}
+.box-main p2 {
+  font-size: 24px;
+  color: white;
+}
+.box-main-prim {
+  margin: 1%;
+}
+.box-main-prim img {
+  width: 6em;
+}
+.box-main-sec {
+  text-align: left;
+  margin: 3%;
+  padding-top: 6%;
+}
+
+/* Caixa do semáforo */
+.box-semaforo {
+  border-radius: 24px 24px 0px 0px;
+  background-color: white;
+  margin: 0%;
+}
+.box-semaforo2 {
+  display: flex;
+}
+.box-semaforo2 h1 {
+  color: black;
+  font-size: 12px;
+}
+.box-semaforo3 {
+  width: 40%;
+}
+
+.traffic-light {
+  width: 1.5em;
+}
+
+.semaforo-img {
+  width: 36em;
+}
+
+.box-main2 {
+  padding: 1%;
+  display: flex;
+  background-color: #2A5C57;
+  gap: 25%;
+}
+.box-main2 h1 {
+  font-size: 42px;
+}
+.box-main2-prim {
+  border-radius: 30px 0px 30px 0px;
+  background-color: #4BA198;
+}
+.box-main2-sec {
+  padding: 2%;
+  background-color: #2A5C57;
+}
+
+/* Regras de mídia query para dispositivos menores */
+@media (max-width: 768px) {
+  .tittle {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .main {
+    margin: 10px;
+  }
+  .box-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .box-main p {
+    font-size: 36px;
+  }
+  .box-main p2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .box-main-sec {
+    text-align: center;
+  }
+  .box-semaforo {
+    border-radius: 0;
+  }
+  .box-main2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .box-main2 h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .box-main2-prim, .box-main2-sec {
+    padding: 2%;
+    border-radius: 30px 0px 30px 0px;
+  }
+}/*# sourceMappingURL=sobre.css.map */

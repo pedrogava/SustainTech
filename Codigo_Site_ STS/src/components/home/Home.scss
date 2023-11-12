@@ -1,0 +1,68 @@
+//Definição de variáveis
+$font-stack: Arial, sans-serif;
+$primary-padding: 20px;
+$secondary-padding: 10px;
+$section-margin: 20px;
+$small-section-margin: 10px;
+$primary-background-color: rgba(255, 255, 255, 0.8);
+$primary-border-radius: 10px;
+$article-margin-bottom: 20px;
+$logo-width-full: 100vw;
+$logo-width: 99.2vw;
+$logo-padding: 6%;
+$small-logo-padding: 3%;
+$header-text-color: white;
+$mobile-screen: 768px;
+$small-font-size: 24px;
+$background-fallback-color: #000; // Cor de fallback para o background
+
+/* Estilos globais */
+
+/* Estilos para a seção de cabeçalho */
+.header {
+  padding: $primary-padding;
+  text-align: center;
+  color: $header-text-color;
+  padding-left: 1px;
+}
+
+/* Estilos para a seção de notícias */
+.news-section {
+  padding: $primary-padding;
+  background-color: $primary-background-color;
+  margin: $section-margin;
+  border-radius: $primary-border-radius;
+}
+
+/* Estilos para cada artigo de notícia */
+.news-article {
+  margin-bottom: $article-margin-bottom;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+/* Estilos para a imagem do logotipo em desktop */
+.logo-image21 {
+  background-image: url('../img/cart.png'); // Substitua pelo caminho correto da sua imagem de desktop
+  background-size: $logo-width;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $background-fallback-color;
+  width: 100%;
+  height: 100vh;
+  padding-top: $logo-padding;
+  padding-bottom: $logo-padding;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: $mobile-screen) {
+  .logo-image21 {
+    background-image: url(''); // Imagem específica para dispositivos móveis
+    background-size: $logo-width;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

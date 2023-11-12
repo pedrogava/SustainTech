@@ -1,0 +1,61 @@
+// Definição de variáveis
+$footer-background-color: #333;
+$common-padding:  4px;
+$icons-gap: 48px;
+$small-icon-width: 6em; 
+$med-icon-width: 3em; // Tamanho reduzido para os ícones
+$footer-text-color: white;
+$breakpoint-tablet: 768px;
+
+/* Reset de estilos para a lista, removendo estilos padrão do navegador */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilização do footer */
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  padding: $common-padding;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .icons-img{
+    width: $small-icon-width;
+  }
+
+  .icons-img2{
+    width: $med-icon-width;
+  }
+  // Estilização específica para a lista de ícones
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $icons-gap;
+
+    li {
+      display: flex;
+      align-items: center;
+
+    
+    }
+  }
+}

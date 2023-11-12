@@ -1,0 +1,165 @@
+// Definição de variáveis
+$font-family-default: Arial, sans-serif;
+$background-color-body: #f8f9fa;
+$color-white: white;
+$flex-gap: 0.5%;
+$common-margin: 1.5%;
+$font-size-h1: 24px;
+$margin-top-standard: 1%;
+$image-width-standard: 4em;
+$font-size-section-h1: 36px;
+$common-padding: 1%;
+$padding-top-large: 60%;
+$width-large: 24em;
+$max-width-full: 100%;
+$background-color-light: #4f85a53b;
+$background-color-dark: #1C272F;
+$background-color-green: #96ffa744;
+$background-color-deep-green: #243627;
+$media-max-width: 768px;
+$image-width-small: 3em;
+$font-size-h1-small: 20px;
+$margin-top-increased: 1.5%;
+$common-padding-large: 5%;
+$margin-top-small: 10px;
+
+// Adicionando keyframes para as animações
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Estilos globais
+body {
+  font-family: $font-family-default;
+  background-color: $background-color-body;
+  margin: 0;
+  padding: 0;
+}
+
+.tittle {
+  color: $color-white;
+  display: flex;
+  justify-content: left;
+  gap: $flex-gap;
+  margin: $common-margin;
+
+  h1 {
+    font-size: $font-size-h1;
+    margin-top: $margin-top-standard;
+  }
+
+  img {
+    width: $image-width-standard;
+  }
+}
+
+section {
+  h1 {
+    color: $color-white;
+    font-size: $font-size-section-h1;
+    margin: $common-margin;
+  }
+}
+
+.img1 {
+  padding: $common-padding;
+}
+
+.trafficlight {
+  padding-top: $padding-top-large;
+  width: $width-large;
+  max-width: $max-width-full;
+}
+
+.box-traffic {
+  display: flex;
+  background-color: $background-color-light;
+  justify-content: center;
+}
+
+.box-traffic2 {
+  margin: $common-margin;
+  padding: $common-padding;
+  color: $color-white;
+  background-color: $background-color-dark;
+  max-width: $max-width-full;
+  overflow-wrap: break-word;
+  text-align: center;
+
+  // Aplicando a animação
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.img2 {
+  padding: $common-padding;
+}
+
+.agro {
+  padding-top: $padding-top-large;
+  width: $width-large;
+  max-width: $max-width-full;
+}
+
+.box-agro {
+  display: flex;
+  background-color: $background-color-green;
+  justify-content: center;
+}
+
+.box-agro2 {
+  margin: $common-margin;
+  padding: $common-padding;
+  color: $color-white;
+  background-color: $background-color-deep-green;
+  max-width: $max-width-full;
+  overflow-wrap: break-word;
+  text-align: center;
+
+  // Aplicando a animação
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
+// Media queries para telas menores
+@media screen and (max-width: $media-max-width) {
+  .tittle {
+    img {
+      width: $image-width-small;
+    }
+
+    h1 {
+      font-size: $font-size-h1-small;
+      margin-top: $margin-top-increased;
+    }
+  }
+
+  .box-traffic,
+  .box-agro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box-traffic3,
+  .box-agro3 {
+    padding: $common-padding-large;
+    margin-top: $margin-top-small;
+  }
+}
